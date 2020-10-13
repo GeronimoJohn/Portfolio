@@ -17,9 +17,8 @@ a{
 /* Main information CSS */
 #main-container{
     width: 100%;
-    height: 100vh;
     box-sizing: border-box;
-    background-color: #edf1fd;
+    
     position: relative;
 }
 nav {
@@ -38,12 +37,6 @@ nav {
     background-color: #f4f7ff;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
     z-index: 1;
-}
-.name {
-    font-family: calibri;
-}
-.name p {
-    font-size: 18px;
 }
 
 .menu{
@@ -71,18 +64,31 @@ nav {
     font-weight: 700;
     transition: all ease 0.4s;
 }
+
+.intro-container {
+    margin: 0 auto;
+}
+
+.intro-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'name' 'photo';
+    background-color: #edf1fd;
+    justify-content: center;
+    align-content: center;
+    padding: 8rem 0 8rem 0;
+}
 .name{
+    display: grid;
     font-family: calibri;
-    width: 500px;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translate(-20%, -50%);
+    justify-content: center;
+    align-content: center;
+    padding-left: 11rem;
 }
 .name p:nth-child(1),
 .name .details{
     color: #6c707c;
-    font-size: 16px;
+    font-size: 25px;
 }
 .name h1{
     font-family: calibri;
@@ -91,6 +97,14 @@ nav {
     letter-spacing: 3px;
     color: #292929;
 }
+.photo {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 62%;
+    border: 4px solid #c28f2f;
+}
+
 .cv-btn{
     width:200px;
     height: 45px;
@@ -145,7 +159,7 @@ nav {
 }
 .about-text h1{
     font-size: 5rem;
-    color:#e07f09;
+    color:#c28f2f;
 }
 .about-text h2{
     font-size: 3rem;
@@ -167,7 +181,7 @@ nav {
     border-radius: 20px;
     border: none;
     outline: none;
-    background-color:#e07f09;
+    background-color: #c28f2f;
 }
 .about-text button:hover{
     background-color: #FFFFFF;
@@ -231,7 +245,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(224,127,9,0.90);
+    background-color: rgba(194, 143,47,0.90);
     display:none;
 }
 .text-overlay h1,p{
@@ -289,7 +303,7 @@ nav {
     width:150px;
     height: 40px;
     margin: 10px;
-    background-color: #e07f09;
+    background-color: #C28F2F;
     border: none;
     outline: none;
 }
@@ -317,7 +331,7 @@ nav {
     font-size: 45px;
 }
 .social a:hover i{
-    color: #e07f09;
+    color: #C28F2F;
     transition: all ease 0.5s;
 }
 
@@ -346,7 +360,7 @@ footer{
 }
 
 .logoFooter {
-    color: #e07f09;
+    color: #C28F2F;
     font-size: 25px; 
     font-weight: bold; 
     font-family: calibri;
