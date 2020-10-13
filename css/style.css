@@ -1,0 +1,261 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Main information CSS */
+#main-container{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    z-index: 1;
+}
+.menu{
+    display: flex;
+    text-transform: uppercase;
+}
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+.language {
+    color:#292929;
+}
+.logo{
+    font-size: 25px; 
+    font-weight: bold; 
+    color: #292929;
+    font-family: Poppins;
+}
+.menu li a:hover, 
+.active{
+    background-color: #292929;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    transition: all ease 0.4s;
+}
+.name{
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+.name p:nth-child(1),
+.name .details{
+    color: #6c707c;
+    font-size: 16px;
+}
+.name h1{
+    font-family: poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #292929;
+}
+.cv-btn{
+    width:200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #FFFFFF;
+}
+.cv-btn:hover{
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+
+}
+.social a{
+    margin: 6px 12px;
+
+}
+.social i{
+    color:rgba(18,17,17,0.40);
+    font-size: 25px;
+}
+.social a:hover i{
+    color: #e07f09;
+    transition: all ease 0.5s;
+}
+.arrow{
+    align-self: end;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 0px;
+    left: -3%;
+    border-right: 1px solid rgba (41,41,41,0.3);
+}
+
+.arrow::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #292929 transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
+}
+
+/* About CSS */
+#about{
+    width:100%;
+    height: 100vh;
+    background-color:#161616;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+   }
+.about-text{
+    font-family: calibri;
+    width: 50%;
+}
+.about-text h1{
+    font-size: 5rem;
+    color:#e07f09;
+}
+.about-text h2{
+    font-size: 3rem;
+    color:#FFFFFF;
+    font-weight: 400;
+}
+.about-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+}
+.about-text p{
+    font-size: 1.2rem;
+    color:rgba(255,255,255,0.90);
+    
+}
+.about-text button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color:#e07f09;
+}
+.about-text button:hover{
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+/* Portfolio CSS */
+#portfolio{
+    width:100%;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+}
+.p-heading{
+    font-family: calibri;
+    font-size: 1.7rem;
+    text-align: center;
+    color:#FFFFFF;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.p-box{
+    background-color: #1F1F1F;
+    overflow: hidden;
+    height: 50%;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+    position: relative;
+    
+}
+.p-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p-b-container{
+    width: 90%;
+    height:70vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+.text-overlay{
+    font-family: calibri;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(224,127,9,0.90);
+    display:none;
+}
+.text-overlay h1,p{
+    color: #FFFFFF;
+}
+.text-overlay h1{
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+}
+.text-overlay p{
+    font-size: 1.2rem;
+    margin: 0px;
+}
+.p-box:hover .text-overlay{
+    display: flex;
+    
+}
