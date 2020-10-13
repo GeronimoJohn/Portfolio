@@ -3,6 +3,10 @@ body {
     padding: 0px;
     background-color: #161616;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style: none;
 }
@@ -35,6 +39,13 @@ nav {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
     z-index: 1;
 }
+.name {
+    font-family: calibri;
+}
+.name p {
+    font-size: 18px;
+}
+
 .menu{
     display: flex;
     text-transform: uppercase;
@@ -51,7 +62,7 @@ nav {
     font-size: 25px; 
     font-weight: bold; 
     color: #292929;
-    font-family: Poppins;
+    font-family: calibri;
 }
 .menu li a:hover, 
 .active{
@@ -74,7 +85,7 @@ nav {
     font-size: 16px;
 }
 .name h1{
-    font-family: poppins;
+    font-family: calibri;
     font-size: 40px;
     margin: 0px;
     letter-spacing: 3px;
@@ -91,25 +102,6 @@ nav {
 }
 .cv-btn:hover{
     background-color: #131313;
-    transition: all ease 0.5s;
-}
-.social{
-    position: absolute;
-    left: 50px;
-    bottom: 50px;
-    display: flex;
-
-}
-.social a{
-    margin: 6px 12px;
-
-}
-.social i{
-    color:rgba(18,17,17,0.40);
-    font-size: 25px;
-}
-.social a:hover i{
-    color: #e07f09;
     transition: all ease 0.5s;
 }
 .arrow{
@@ -259,3 +251,105 @@ nav {
     display: flex;
     
 }
+
+/* contact css */
+#contact-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 300px;
+    background-color: #F4F7FF;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
+}
+.c-b-heading{
+    font-size: 2rem;
+    color:#1E1E1E;
+    font-family: calibri;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #1E1E1E;
+}
+.details-below{
+    font-size: 1.5rem;
+    color:#1E1E1E;
+    font-family: calibri;
+    margin: 10px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+#contact-btn button{
+    color: #000000;
+    font-size: 1rem;
+    font-family: calibri;
+    width:150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #e07f09;
+    border: none;
+    outline: none;
+}
+#contact-btn button:hover{
+    background-color: #1E1E1E;
+    color:#FFFFFF;
+    transition: all ease 0.5s;
+    font-weight: bold;
+}
+
+
+.social{
+    position: abosolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+
+}
+.social a{
+    margin: 6px 12px;
+
+}
+.social i{
+    color:#FFF;
+    font-size: 45px;
+}
+.social a:hover i{
+    color: #e07f09;
+    transition: all ease 0.5s;
+}
+
+footer{
+    font-family: calibri;
+    padding-top: 20px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri;
+    color: #FFFFFF;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.copyrightSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 30rem 3rem;
+    flex-direction: row;
+    color: #FFF;
+}
+
+.logoFooter {
+    color: #e07f09;
+    font-size: 25px; 
+    font-weight: bold; 
+    font-family: calibri;
+}
+
+
