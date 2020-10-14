@@ -81,9 +81,10 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'name' 'photo';
-    background-color: #edf1fd;
+    background-color: #FFFFFF;
     justify-content: center;
     align-content: center;
+    height: 40rem;
     padding: 8rem 0 8rem 0;
 }
 .name{
@@ -109,8 +110,8 @@ nav {
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 36rem;
-    width: 62%;
+    height: 41rem;
+    width: 100%;
 }
 
 .photo img {
