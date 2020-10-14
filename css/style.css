@@ -52,7 +52,7 @@ nav {
 .nav-links li a {
     padding: 10px 15px;
     color: #6c707c;
-    font-size: 12px;
+    font-size: 14px;
 }
 .language {
     color:#292929;
@@ -109,12 +109,13 @@ nav {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    height: 36rem;
+    width: 62%;
 }
 
 .photo img {
     height: 100%;
-    width: 90%;
+    width: 100%;
 }
 
 .cv-btn{
@@ -370,8 +371,11 @@ footer{
         display: none;
     }
    
-    .photo{
-        
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .photo {
+        display: none;
     }
     .name{
         padding: 5rem;
